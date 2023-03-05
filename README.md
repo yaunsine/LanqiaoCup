@@ -2,8 +2,15 @@
 ![](https://img.shields.io/badge/语言-python-orange.svg)
 
 
+### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
+
+
+## 笔记列表：
+
 [505.数字三角形](数字三角形.md)
 
+
+### 省赛时间：2023-04-08(周六)
 
 本项目`Git Https`链接：
 > https://github.com/yaunsine/LanqiaoCup.git
