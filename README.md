@@ -18,7 +18,8 @@
 
 本项目`Git Https`链接：
 > https://github.com/yaunsine/LanqiaoCup.git
-
+<button onclick="javascript:navigator.clipboard.writeText('https://github.com/yaunsine/LanqiaoCup.git');">复制</button>
 
 本项目`Git SSH`链接:
 > git@github.com:yaunsine/LanqiaoCup.git
+> <button onclick="javascript:navigator.clipboard.writeText('git@github.com:yaunsine/LanqiaoCup.git');">复制</button>
