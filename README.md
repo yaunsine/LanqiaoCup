@@ -9,7 +9,8 @@
 ```
 
 
-![](https://img.shields.io/badge/语言-python-orange.svg)
+![](https://img.shields.io/badge/语言-python3.7-orange.svg)
+![](https://img.shields.io/badge/运行终端-Windows-yellow.svg)
 ![](https://img.shields.io/badge/开源协议-MIT协议-green.svg)
 
 
@@ -35,6 +36,12 @@
 
 本项目`Git SSH`链接:
 > git@github.com:yaunsine/LanqiaoCup.git
+
+
+### 加载环境:
+```shell
+pip install -r requirements.txt
+```
 
 ### markdown文件转pdf方法:
 ```shell
