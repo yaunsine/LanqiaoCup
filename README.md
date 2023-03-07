@@ -1,6 +1,6 @@
 # 蓝桥杯
 ![](https://img.shields.io/badge/语言-python-orange.svg)
-![](https://img.shields.io/badge/开源协议-MIT license-green.svg)
+![](https://img.shields.io/badge/开源协议-MIT协议-green.svg)
 
 
 ### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
