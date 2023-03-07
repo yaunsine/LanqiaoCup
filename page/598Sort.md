@@ -49,3 +49,4 @@ for j in range(i, -1, -1):
     result += str(chr(97+j))
 print(first_letter + result)
 ```
+

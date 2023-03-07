@@ -18,13 +18,13 @@
 
 ## 笔记列表：
 
-[505.数字三角形](505数字三角形.md)
+[505.数字三角形](page/505NumberThreeAngle.md)
 
-[497.成绩分析](497成绩.md)
+[497.成绩分析](page/497Grade.md)
 
-[598.排序](598排序.md)
+[598.排序](page/598Sort.md)
 
-[1445.空间](1445空间.md)
+[1445.空间](page/1445Space.md)
 
 
 ### 省赛时间：2023-04-08(周六)
@@ -32,9 +32,7 @@
 本项目`Git Https`链接：
 > https://github.com/yaunsine/LanqiaoCup.git
 
-<button onclick="javascript:navigator.clipboard.writeText('https://github.com/yaunsine/LanqiaoCup.git');">复制</button>
 
 本项目`Git SSH`链接:
 > git@github.com:yaunsine/LanqiaoCup.git
 
-<button onclick="javascript:navigator.clipboard.writeText('git@github.com:yaunsine/LanqiaoCup.git');">复制</button>

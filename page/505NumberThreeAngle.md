@@ -70,3 +70,4 @@ for i in range(1, n):
 
 print(max(all_ls[-1][n // 2 - 1], all_ls[-1][n // 2]))
 ```
+
