@@ -36,3 +36,7 @@
 本项目`Git SSH`链接:
 > git@github.com:yaunsine/LanqiaoCup.git
 
+### markdown文件转pdf方法:
+```shell
+python main.py
+```
