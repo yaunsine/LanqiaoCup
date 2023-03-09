@@ -21,6 +21,7 @@ def print_hi(name):
 
 
 def grip_run(md_from=None) -> None:
+    os.system("combine.bat ")
     os.system("grip {0}".format(md_from))
 
 
