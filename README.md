@@ -8,11 +8,14 @@
         \/    \/     \/      |__|       \/                 \/      |__|    
 ```
 
+<div style="text-align: center">
+    <img src="https://img.shields.io/badge/语言-python3.7-orange.svg"/>
+    <img src="https://img.shields.io/badge/运行终端-Windows-yellow.svg"/>
+    <img src="https://img.shields.io/badge/开源协议-MIT协议-green.svg"/>
+</div>
 
-![](https://img.shields.io/badge/语言-python3.7-orange.svg)
-![](https://img.shields.io/badge/运行终端-Windows-yellow.svg)
-![](https://img.shields.io/badge/开源协议-MIT协议-green.svg)
-
+### 序言
+此项目以刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。
 
 ### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
 
@@ -28,6 +31,8 @@
 [594.蛇形填数](page/SnakeFillin-594.md)
 
 [597.跑步锻炼](page/RunExercise-597.md)
+
+[819.递增序列](page/IncrementalSequence-819.md)
 
 [1445.空间](page/1445Space.md)
 
@@ -47,7 +52,21 @@
 pip install -r requirements.txt
 ```
 
+### 合并多个markdown
+在`cmd`终端下运行
+```shell
+combine.bat
+```
+
 ### markdown文件转pdf方法:
 ```shell
 python main.py
 ```
+
+
+### 第三方工具
+[1] `wkhtmltopdf`工具
+
+[2] `grip`工具
+
+
