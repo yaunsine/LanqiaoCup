@@ -34,6 +34,8 @@
 
 [819.递增序列](page/IncrementalSequence-819.md)
 
+[1643.货物摆放](page/GoodsPlacement-1463.md)
+
 [1445.空间](page/1445Space.md)
 
 
