@@ -32,6 +32,8 @@
 
 [597.跑步锻炼](page/RunExercise-597.md)
 
+[646.等差素数列](page/IsochromaticPrimeSequence-646.md)
+
 [819.递增序列](page/IncrementalSequence-819.md)
 
 [1643.货物摆放](page/GoodsPlacement-1463.md)
