@@ -42,6 +42,12 @@
 
 [1445.空间](page/1445Space.md)
 
+[2080.求和](page/Sum-2080.md)
+
+[2060.裁纸刀](page/PaperCutter-2060.md)
+
+[595.七段码](page/seven-segment_code-595.md)
+
 
 ### 省赛时间：2023-04-08(周六)
 
