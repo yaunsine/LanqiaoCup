@@ -36,9 +36,17 @@
 
 [819.递增序列](page/IncrementalSequence-819.md)
 
+[604.组队](page/OrganizeATeam-604.md)
+
 [1643.货物摆放](page/GoodsPlacement-1463.md)
 
 [1445.空间](page/1445Space.md)
+
+[2080.求和](page/Sum-2080.md)
+
+[2060.裁纸刀](page/PaperCutter-2060.md)
+
+[595.七段码](page/seven-segment_code-595.md)
 
 
 ### 省赛时间：2023-04-08(周六)
@@ -642,6 +650,135 @@ print(tolerance())
 ```
 
 
+# 2095.九进制转十进制
+
+【解法1】调用python库的int方法
+```python
+print(int("2022", 9))
+```
+
+【解法2】常规解法
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+nine_x = 2022
+ten_x = 0
+w = 1
+while nine_x != 0:
+  ten_x = ten_x + nine_x % 10 * w
+  nine_x = nine_x // 10
+  w = w * 9
+
+print(ten_x)
+```
+
+
+由此，可以得出n进制转10进制的代码:
+```python3
+def n_to_decimal(n_x, n) -> int:
+  w = 1
+  ten_x = ten_x + nice_x % 10 * w
+  n_x = n_x // 10
+  w = w * n
+  return ten_x
+```
+
+
+
+# 604.组队
+
+【解法1】观察法
+```python
+print(98+99+98+97+98)
+```
+
+【解法2】暴力
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+# mat = [
+#   [97, 90, 0, 0, 0],
+#   [92, 85, 96, 0, 0],
+#   [0, 0, 0, 0, 93],
+#   [0, 0, 0, 80, 86],
+#   [89, 83, 97, 0, 0],
+#   [82, 86, 0, 0, 0],
+#   [0, 0, 0, 87, 90],
+#   [0, 97, 96, 0, 0],
+#   [0, 0, 89, 0, 0],
+#   [95, 99, 0, 0, 0],
+#   [0, 0, 96, 97, 0],
+#   [0, 0, 0, 93, 98],
+#   [94, 91, 0, 0, 0],
+#   [0, 83, 87, 0, 0],
+#   [0, 0, 98, 97, 98],
+#   [0, 0, 0, 93, 96],
+#   [98, 83, 99, 98, 81],
+#   [93, 87, 92, 96, 98],
+#   [0, 0, 0, 89, 92],
+#   [0, 99, 96, 95, 81]
+# ]
+s1 = [97,92, 0, 0,89,82, 0, 0, 0,95, 0, 0,94, 0, 0, 0,98,93, 0, 0]
+s2 = [90,85, 0, 0,83,86, 0,97, 0,99, 0, 0,91,83, 0, 0,83,87, 0,99]
+s3 = [ 0,96, 0, 0,97, 0, 0,96,89, 0,96, 0, 0,87,98, 0,99,92, 0,96]
+s4 = [ 0, 0, 0,80, 0, 0,87, 0, 0, 0,97,93, 0, 0,97,93,98,96,89,95]
+s5 = [ 0, 0,93,86, 0, 0,90, 0, 0, 0, 0,98, 0, 0,98,86,81,98,92,81]
+mat = [s1, s2, s3, s4, s5]
+max_val = 0
+for i in range(20):
+  for j in range(20):
+    for k in range(20):
+      for m in range(20):
+        for n in range(20):
+          if i != j and i != k and i != m and i != n and j != k and j != m and j != n and k != m and k != n and m != n:
+            if max_val < s1[i] + s2[j] + s3[k] + s4[m] + s5[n]:
+              max_val = s1[i] + s2[j] + s3[k] + s4[m] + s5[n]
+print(max_val)
+
+```
+
+# 2060.裁纸刀
+
+【解法1】分析法
+
+先把边缘剪开，需要4刀；再发现中间的剪出来有个规律，就是需要剪2个需要1刀，剪3个需要2刀，剪6个需要5刀,...,剪n个需要(n-1)刀
+
+所以440个需要439刀
+
+```python
+print(4 + 439)
+```
+
+
+# 2376.练习
+
+问题描述
+小蓝在蓝桥杯练习系统上做题。做到一道题, 他编写好程序, 在自己的电 脑上尝试了题目中提供的几个样例, 全部得到了正确的结果, 可是当他将自己 的程序提交到练习系统上时, 却得了 0 分, 这种情况可能的原因是什么? 请在 以下选项中选择所有可能导致这种情况的原因。
+
+A. 题目中的样例一般比较小, 在评测的时候可能使用的评测用例比较大, 小蓝的程序虽然在小样例能得到解, 对于大一些的评测用例可能速度太慢, 超 过了题目要求的时间限制。
+
+B. 小蓝的内存使用过多, 虽然在自己的电脑上运行正确, 可是在评测的内存限制下无法运行。
+
+C. 小蓝的程序有考虑不足之处, 题目中的样例比较小, 小蓝的程序恰好能 得到对应的结果, 可是当评测用例比较复杂时, 小蓝的程序无法得到正确的结 果。
+
+答案提交
+这是一道结果填空的题, 你只需要算出结果后提交即可。本题的结果为一 个由大写字母组成的字符串, 按字母顺序给出所选择的选项, 在提交答案时只 填写这个字符串, 填写多余的内容将无法得分。例如, 如果选项全部正确, 请填写答案ABC。
+
+【解法1】直接答案
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+print('ABC')
+```
+
+
 # 597.跑步训练
 
 
@@ -807,6 +944,55 @@ def get_kilometres():
 print(get_kilometres())
 ```
 
+# 595.七段码
+
+原题链接：
+https://www.lanqiao.cn/problems/595/learning/?first_category_id=1&sort=students_count&second_category_id=3
+
+【解法1】图的DFS深度优先搜索
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+"""
+  a b c d e f g
+a[1 1 0 0 0 1 0]
+b[             ]
+c[             ]
+d[             ]
+e[             ]
+f[             ]
+g[             ]
+"""
+
+def back_track(graph: list, visit: list, n: int, i: int) -> int:
+  count = 1
+  for x in range(n):
+    if visit[x] != 1 and graph[i][x] != 0:
+      visit[x] = 1
+      count += back_track(graph, visit, n, x)
+      visit[x] = 0
+  return count
+
+graph = [
+  [1, 1, 0, 0, 0, 1, 0],
+  [1, 1, 1, 0, 0, 0, 1],
+  [0, 1, 1, 1, 0, 0, 1],
+  [0, 0, 1, 1, 1, 0, 0],
+  [0, 0, 0, 1, 1, 1, 1],
+  [1, 0, 0, 0, 1, 1, 1],
+  [0, 1, 1, 0, 1, 1, 1]
+]
+
+visit = [0 for _ in range(len(graph))]
+count = back_track(graph, visit, len(graph), 0)
+print(count // 2)
+
+```
+
+
 # 594.蛇形填数
 
 题目描述
@@ -878,4 +1064,199 @@ for i in range(0, 20, 1):
     res += i * 4
 print(res)
 ```
+
+# 2080.求和
+
+
+问题描述
+给定 nn 个整数 a_1, a_2, · · · , a_na 
+1
+​
+ ,a 
+2
+​
+ ,⋅⋅⋅,a 
+n
+​
+  ，求它们两两相乘再相加的和，即：
+
+S=a_{1} \cdot a_{2}+a_{1} \cdot a_{3}+\cdots+a_{1} \cdot a_{n}+a_{2} \cdot a_{3}+\cdots+a_{n-2} \cdot a_{n-1}+a_{n-2} \cdot a_{n}+a_{n-1} \cdot a_{n}
+S=a 
+1
+​
+ ⋅a 
+2
+​
+ +a 
+1
+​
+ ⋅a 
+3
+​
+ +⋯+a 
+1
+​
+ ⋅a 
+n
+​
+ +a 
+2
+​
+ ⋅a 
+3
+​
+ +⋯+a 
+n−2
+​
+ ⋅a 
+n−1
+​
+ +a 
+n−2
+​
+ ⋅a 
+n
+​
+ +a 
+n−1
+​
+ ⋅a 
+n
+​
+ 
+输入格式
+输入的第一行包含一个整数 nn。
+
+第二行包含 nn 个整数 a_1,a_2,\cdots, a_na 
+1
+​
+ ,a 
+2
+​
+ ,⋯,a 
+n
+​
+ 。
+
+输出格式
+输出一个整数 SS，表示所求的和。请使用合适的数据类型进行运算。
+
+样例输入
+4
+1 3 6 9
+copy
+样例输出
+117
+copy
+评测用例规模与约定
+对于 30 \%30% 的数据，1 \leq n \leq 1000,1 \leq a_{i} \leq 1001≤n≤1000,1≤a 
+i
+​
+ ≤100 。
+
+对于所有评测用例， 1 \leq n \leq 200000,1 \leq a_{i} \leq 10001≤n≤200000,1≤a 
+i
+​
+ ≤1000 。
+
+
+【解法1】常规求法，暴力超时
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+n = int(input())
+line = input()
+a_ls = list(map(int, line.split(' ')))
+
+i = 0
+sum_x = 0
+for i in range(len(a_ls) - 1):
+  for j in range(i+1, len(a_ls)):
+    sum_x += a_ls[i] * a_ls[j]
+print(sum_x)
+```
+
+【解法2】O(n)解法
+
+```
+//考察了数学知识，重点是将数学语言转换成编程语言
+
+//假如有5个数：a0,a1,a2,a3,a4
+//求解：
+//      sum0 = a0 + a1 + a2 + a3 + a4
+//      用乘法分配律进行分组求和
+//      sum1 = ( a1 + a2 + a3 + a4 ) * a0 = (sum0 - a0                ) * a0
+//      sum2 = (      a2 + a3 + a4 ) * a1 = (sum0 - a0 - a1           ) * a1
+//      sum3 = (           a3 + a4 ) * a2 = (sum0 - a0 - a1 - a2      ) * a2
+//      sum4 = (                a4 ) * a3 = (sum0 - a0 - a1 - a2 - a3 ) * a3
+//      res = sum1 + sum2 + sum3 + sum4
+
+//可以看到非常的有规律
+//我们求出数组的和(sum)后，在遍历求和时，依次减去当前索引所指的数，再与这个被减的数相乘
+
+//用常规方法，双重for循环遍历数组，时间复杂度为 O(n2)。显然，只能拿30％的分
+//如果运用些数学知识，只用一个for循环即可完成求解，时间复杂度为 O(n)
+```
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+n = int(input())
+line = input()
+a_ls = list(map(int, line.split(' ')))
+
+i = 0
+sum_x = 0
+res = 0
+sum0 = 0
+for i in range(len(a_ls)):
+  sum0 += a_ls[i]
+res = sum0
+for i in range(len(a_ls)):
+  res -= a_ls[i]
+  sum_x += res * a_ls[i]
+
+
+print(sum_x)
+```
+
+
+# 1457.杨辉三角形
+
+【解法1】只通过40%
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+x = int(input())
+# ls = [[0 for _ in range(200)] for i in range(200)]
+ls = list()
+
+def find_first(ls):
+  k = 0
+  for i in range(44723):
+    ls_sub = []
+    for j in range(i+1):
+      y = 0
+      if j == 0 or j == i:
+        y = 1
+      else:
+        y = ls[i - 1][j - 1] + ls[i - 1][j]
+      k += 1
+      if y == x:
+        return k
+      ls_sub.append(y)
+    ls.append(ls_sub)
+  return -1
+
+print(find_first(ls))
+```
+
 
