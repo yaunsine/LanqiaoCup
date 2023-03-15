@@ -48,6 +48,22 @@
 
 [595.七段码](page/seven-segment_code-595.md)
 
+[2381.三角回文数](page/TrianglePlindrome-2381.md)
+
+[1452.时间显示](page/TimeShow-1452.md)
+
+[2140.星期计算](page/WeeklyCalculation-2140.md)
+
+[595.七段码](page/seven-segment_code-595.md)
+
+[2118.字母排列](page/ArrangeLetters-2118.md)
+
+[2380.打卡](page/ClockIn-2380.md)
+
+[605.年号字串](page/YearString-605.md)
+
+
+
 
 ### 省赛时间：2023-04-08(周六)
 
