@@ -8,14 +8,14 @@
         \/    \/     \/      |__|       \/                 \/      |__|    
 ```
 
-<div style="text-align: center">
-    <img src="https://img.shields.io/badge/语言-python3.7-orange.svg"/>
-    <img src="https://img.shields.io/badge/运行终端-Windows-yellow.svg"/>
-    <img src="https://img.shields.io/badge/开源协议-MIT协议-green.svg"/>
-</div>
+<p style="text-align: center">
+    <img src="https://img.shields.io/badge/语言-python3.7-orange.svg" alt=""/>
+    <img src="https://img.shields.io/badge/运行终端-Windows-yellow.svg" alt=""/>
+    <img src="https://img.shields.io/badge/开源协议-MIT协议-green.svg" alt=""/>
+</p>
 
 ### 序言
-此项目以刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。
+此项目以刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
 
 ### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
 
@@ -61,6 +61,7 @@
 [2380.打卡](page/ClockIn-2380.md)
 
 [605.年号字串](page/YearString-605.md)
+
 
 
 
