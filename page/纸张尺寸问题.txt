@@ -1,0 +1,25 @@
+# 纸张尺寸问题
+
+【解法1】常规解法
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+paper_type = input()
+
+paper_size = int(list(paper_type)[1])
+
+origin_length = 1189
+origin_width = 841
+
+i = 0
+while i < paper_size:
+  origin_length = origin_length // 2
+  if origin_length < origin_width:
+    origin_length, origin_width = origin_width, origin_length
+  i += 1
+
+print(origin_length)
+print(origin_width)
+```

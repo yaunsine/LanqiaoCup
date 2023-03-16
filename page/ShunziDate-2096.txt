@@ -1,0 +1,26 @@
+# 2096.顺子日期
+
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+
+months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+count = 0
+for i, days in enumerate(months):
+  for j in range(1, days + 1):
+    m = (i + 1) // 10
+    
+    n = (i + 1) % 10
+    x = j // 10
+    y = j % 10
+    if (x - n == n - m and x - n == 1) or (y - x == x - n and x - n == 1):
+      count += 1
+print(count)
+
+```
+
+
