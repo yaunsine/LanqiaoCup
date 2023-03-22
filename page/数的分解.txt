@@ -1,0 +1,26 @@
+# 数的分解
+
+```
+import os
+import sys
+
+
+def two_four_in(i: int) -> bool:
+  return '2' in str(i) or '4' in str(i)
+
+cnt = 0
+# 请在此输入您的代码
+for i in range(1, 2019):
+  if two_four_in(i):
+    continue
+  for j in range(1, 2019-i+1):
+    if two_four_in(j):
+      continue
+    k = 2019 - i - j
+    if two_four_in(k):
+      continue
+    if i < j and j < k:
+      cnt += 1
+
+print(cnt)
+```
