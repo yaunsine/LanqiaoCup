@@ -1,0 +1,22 @@
+# 相乘
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+"""
+  1+2+...+1000000007*2021%1000000007
+  x % 1000000007 = 999999999
+"""
+
+def get_x():
+  rest = 999999999
+  div_num = 1000000007
+  for i in range(1, 1000000007, 1):
+    if (i * div_num + rest) % 2021 == 0:
+      return (i * div_num + rest) // 2021
+  return 0
+print(get_x())
+```
