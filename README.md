@@ -24,6 +24,8 @@
 
 ## 笔记列表：
 
+<summary>
+    <detail>
 [505.数字三角形](page/505NumberThreeAngle.md)
 
 [497.成绩分析](page/497Grade.md)
@@ -63,6 +65,10 @@
 [2380.打卡](page/ClockIn-2380.md)
 
 [605.年号字串](page/YearString-605.md)
+    </detail>
+</summary>
+
+
 
 
 
