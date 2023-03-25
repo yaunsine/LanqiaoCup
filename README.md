@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/开源协议-MIT协议-green.svg" alt=""/>
 </p>
 
-![中文](readme-zh.md) | ![English](readme-en.md)
+[中文](readme-zh.md) | [English](readme-en.md)
 
 ### 序言
 此项目以刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
@@ -27,6 +27,12 @@
 [505.数字三角形](page/505NumberThreeAngle.md)
 
 [497.成绩分析](page/497Grade.md)
+
+<details>
+    
+    <summary>查看所有</summary>
+    
+
 
 [598.排序](page/598Sort.md)
 
@@ -63,6 +69,10 @@
 [2380.打卡](page/ClockIn-2380.md)
 
 [605.年号字串](page/YearString-605.md)
+    
+</details>
+
+
 
 
 
