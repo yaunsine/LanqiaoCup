@@ -1,0 +1,71 @@
+# 排序
+
+【解法1】快速排序
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+def quick_sort(lx: list, left: int, right: int) -> list:
+  if left >= right:
+    return lx[left:right+1]
+  temp = lx[left]
+  l = left
+  r = right
+  while left < right:
+    while lx[right] > temp and left < right:
+      right -= 1
+    if left < right:
+      lx[left] = lx[right]
+      left += 1
+    while lx[left] < temp and left < right:
+      left += 1
+    if left < right:
+      lx[right] = lx[left]
+      right -= 1
+  
+  return quick_sort(lx, l, left - 1) + [temp] + quick_sort(lx, left + 1, r)
+
+n = int(input())
+lx = list(map(int, input().split()))
+# 快速排序
+lx = quick_sort(lx, 0, len(lx) - 1)
+
+str_lx = ""
+str_lx_reverse = ""
+for i in range(len(lx)):
+  str_lx += str(lx[i]) + " "
+  str_lx_reverse += str(lx[len(lx) - i - 1]) + " "
+
+print(str_lx)
+print(str_lx_reverse)
+```
+
+【解法2】快速排序
+```python
+def quick_sort(lx: list, left: int, right: int) -> list:
+  if left >= right:
+    return lx
+  temp = lx[left]
+  l = left
+  r = right
+  while left < right:
+    while lx[right] > temp and left < right:
+      right -= 1
+    if left < right:
+      lx[left] = lx[right]
+      left += 1
+    while lx[left] < temp and left < right:
+      left += 1
+    if left < right:
+      lx[right] = lx[left]
+      right -= 1
+  lx[left] = temp
+  quick_sort(lx, l, left - 1)
+  quick_sort(lx, left + 1, r)
+  return lx
+
+lx = [4, 2, 5, 3, 7, 6, 1]
+lx = quick_sort(lx, 0, len(lx)-1)
+print(lx)
+```
