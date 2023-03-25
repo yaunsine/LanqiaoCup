@@ -30,45 +30,43 @@
 
 <details>
     
-    <summary>查看所有</summary>
-    
+<summary><b>查看所有</b></summary>
 
+- [598.排序](page/598Sort.md)
 
-[598.排序](page/598Sort.md)
+- [594.蛇形填数](page/SnakeFillin-594.md)
 
-[594.蛇形填数](page/SnakeFillin-594.md)
+- [597.跑步锻炼](page/RunExercise-597.md)
 
-[597.跑步锻炼](page/RunExercise-597.md)
+- [646.等差素数列](page/IsochromaticPrimeSequence-646.md)
 
-[646.等差素数列](page/IsochromaticPrimeSequence-646.md)
+- [819.递增序列](page/IncrementalSequence-819.md)
 
-[819.递增序列](page/IncrementalSequence-819.md)
+- [604.组队](page/OrganizeATeam-604.md)
 
-[604.组队](page/OrganizeATeam-604.md)
+- [1643.货物摆放](page/GoodsPlacement-1463.md)
 
-[1643.货物摆放](page/GoodsPlacement-1463.md)
+- [1445.空间](page/1445Space.md)
 
-[1445.空间](page/1445Space.md)
+- [2080.求和](page/Sum-2080.md)
 
-[2080.求和](page/Sum-2080.md)
+- [2060.裁纸刀](page/PaperCutter-2060.md)
 
-[2060.裁纸刀](page/PaperCutter-2060.md)
+- [595.七段码](page/seven-segment_code-595.md)
 
-[595.七段码](page/seven-segment_code-595.md)
+- [2381.三角回文数](page/TrianglePlindrome-2381.md)
 
-[2381.三角回文数](page/TrianglePlindrome-2381.md)
+- [1452.时间显示](page/TimeShow-1452.md)
 
-[1452.时间显示](page/TimeShow-1452.md)
+- [2140.星期计算](page/WeeklyCalculation-2140.md)
 
-[2140.星期计算](page/WeeklyCalculation-2140.md)
+- [595.七段码](page/seven-segment_code-595.md)
 
-[595.七段码](page/seven-segment_code-595.md)
+- [2118.字母排列](page/ArrangeLetters-2118.md)
 
-[2118.字母排列](page/ArrangeLetters-2118.md)
+- [2380.打卡](page/ClockIn-2380.md)
 
-[2380.打卡](page/ClockIn-2380.md)
-
-[605.年号字串](page/YearString-605.md)
+- [605.年号字串](page/YearString-605.md)
     
 </details>
 
