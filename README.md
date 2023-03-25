@@ -14,53 +14,65 @@
     <img src="https://img.shields.io/badge/开源协议-MIT协议-green.svg" alt=""/>
 </p>
 
-### 序言
-此项目以刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
+[中文](readme-zh.md) | [English](readme-en.md)
 
-### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
+### 序言
+此项目以lanqiao刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
+
+### 刷题链接1：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
+
+### 题库链接2：https://www.lanqiao.cn/problems/
 
 
 ## 笔记列表：
 
-[505.数字三角形](page/505NumberThreeAngle.md)
+- [505.数字三角形](page/505NumberThreeAngle.md)
 
-[497.成绩分析](page/497Grade.md)
+- [497.成绩分析](page/497Grade.md)
 
-[598.排序](page/598Sort.md)
+<details>
+    
+<summary><b>查看更多</b></summary>
 
-[594.蛇形填数](page/SnakeFillin-594.md)
+- [598.排序](page/598Sort.md)
 
-[597.跑步锻炼](page/RunExercise-597.md)
+- [594.蛇形填数](page/SnakeFillin-594.md)
 
-[646.等差素数列](page/IsochromaticPrimeSequence-646.md)
+- [597.跑步锻炼](page/RunExercise-597.md)
 
-[819.递增序列](page/IncrementalSequence-819.md)
+- [646.等差素数列](page/IsochromaticPrimeSequence-646.md)
 
-[604.组队](page/OrganizeATeam-604.md)
+- [819.递增序列](page/IncrementalSequence-819.md)
 
-[1643.货物摆放](page/GoodsPlacement-1463.md)
+- [604.组队](page/OrganizeATeam-604.md)
 
-[1445.空间](page/1445Space.md)
+- [1643.货物摆放](page/GoodsPlacement-1463.md)
 
-[2080.求和](page/Sum-2080.md)
+- [1445.空间](page/1445Space.md)
 
-[2060.裁纸刀](page/PaperCutter-2060.md)
+- [2080.求和](page/Sum-2080.md)
 
-[595.七段码](page/seven-segment_code-595.md)
+- [2060.裁纸刀](page/PaperCutter-2060.md)
 
-[2381.三角回文数](page/TrianglePlindrome-2381.md)
+- [595.七段码](page/seven-segment_code-595.md)
 
-[1452.时间显示](page/TimeShow-1452.md)
+- [2381.三角回文数](page/TrianglePlindrome-2381.md)
 
-[2140.星期计算](page/WeeklyCalculation-2140.md)
+- [1452.时间显示](page/TimeShow-1452.md)
 
-[595.七段码](page/seven-segment_code-595.md)
+- [2140.星期计算](page/WeeklyCalculation-2140.md)
 
-[2118.字母排列](page/ArrangeLetters-2118.md)
+- [595.七段码](page/seven-segment_code-595.md)
 
-[2380.打卡](page/ClockIn-2380.md)
+- [2118.字母排列](page/ArrangeLetters-2118.md)
 
-[605.年号字串](page/YearString-605.md)
+- [2380.打卡](page/ClockIn-2380.md)
+
+- [605.年号字串](page/YearString-605.md)
+    
+</details>
+
+
 
 
 
