@@ -19,18 +19,20 @@
 ### 序言
 此项目以lanqiao刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
 
-### 刷题链接：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
+### 刷题链接1：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
+
+### 题库链接2：https://www.lanqiao.cn/problems/
 
 
 ## 笔记列表：
 
-[505.数字三角形](page/505NumberThreeAngle.md)
+- [505.数字三角形](page/505NumberThreeAngle.md)
 
-[497.成绩分析](page/497Grade.md)
+- [497.成绩分析](page/497Grade.md)
 
 <details>
     
-<summary><b>查看所有</b></summary>
+<summary><b>查看更多</b></summary>
 
 - [598.排序](page/598Sort.md)
 
