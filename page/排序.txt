@@ -65,7 +65,25 @@ def quick_sort(lx: list, left: int, right: int) -> list:
   quick_sort(lx, left + 1, r)
   return lx
 
-lx = [4, 2, 5, 3, 7, 6, 1]
-lx = quick_sort(lx, 0, len(lx)-1)
-print(lx)
+n = int(input())
+lx = list(map(int, input().split()))
+# 快速排序
+lx = quick_sort(lx, 0, len(lx) - 1)
+
+str_lx = ""
+str_lx_reverse = ""
+for i in range(len(lx)):
+  str_lx += str(lx[i]) + " "
+  str_lx_reverse += str(lx[len(lx) - i - 1]) + " "
+
+print(str_lx)
+print(str_lx_reverse)
+```
+
+【解法3】调包解法
+```python
+n = int(input())
+lx = list(map(int, input().split()))
+print(*sorted(lx))	# *星号解包：[1, 2, 3, 4] -> 1 2 3 4
+print(*sorted(lx, reverse=True))
 ```
