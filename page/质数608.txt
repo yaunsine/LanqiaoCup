@@ -1,0 +1,30 @@
+# 608.质数
+
+查找第2019个质数
+
+### 原题：https://www.lanqiao.cn/problems/608/learning/?first_category_id=1&sort=students_count&second_category_id=3
+
+【解法1】常规解法
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+def zhishu(x):
+  for i in range(2, int(pow(x, 0.5))+1):
+    if x % i == 0:
+      return False
+  return True
+
+
+cnt = 0
+for i in range(2, 100000000, 1):
+  if zhishu(i):
+    cnt += 1
+    if cnt == 2019:
+      print(i)
+      break
+    
+
+
+```
