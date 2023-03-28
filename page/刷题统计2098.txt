@@ -1,0 +1,33 @@
+# 2098.刷题统计
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+a, b, n = list(map(int, input().split()))
+
+# 一个星期
+per_week_num = a * 5 + b * 2
+wn = n // per_week_num
+rest = n % per_week_num
+res = wn * 7
+if rest == 0:
+  res += 0
+elif rest <= a:
+  res += 1
+elif rest <= 2 * a:
+  res += 2
+elif rest <= 3 * a:
+  res += 3
+elif rest <= 4 * a:
+  res += 4
+elif rest <= 5 * a:
+  res += 5
+elif rest <= 5 * a + b:
+  res += 6
+elif rest <= 5 * a + 2 * b:
+  res += 7
+print(res)
+```

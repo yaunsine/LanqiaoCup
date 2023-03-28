@@ -1,0 +1,56 @@
+# 2122.数位排序
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+def sum_per_number(x):
+  sum_x = 0
+  while x // 10 != 0:
+    number = x % 10
+    sum_x += number
+    x = x // 10
+  sum_x += x
+  return sum_x
+
+# def sort(lx, sum_ls, left, right):
+#   if left >= right:
+#     return sum_ls
+#   l = left
+#   r = right
+#   temp = sum_ls[left]
+#   while left < right:
+#     while temp < sum_ls[right] and left < right:
+#       right -= 1
+#     if temp > sum_ls[right]:
+#       sum_ls[left] = sum_ls[right]
+#       lx[left] = lx[right]
+#     while temp > sum_ls[left] and left < right:
+#       left += 1
+#     if temp < sum_ls[left]:
+#       sum_ls[right] = sum_ls[left]
+#       lx[right] = lx[left]
+#   sort(lx, sum_ls, l, left - 1)
+#   sort(lx, sum_ls, left + 1, r)
+#   return sum_ls
+
+# n = int(input())
+# m = int(input())
+
+# sum_ls = [0 for _ in range(n)]
+# lx = list(range(1, n + 1, 1))
+# for i in range(1, n+1, 1):
+#   cur = sum_per_number(i)
+#   sum_ls[i-1] = cur
+
+# sort(lx, sum_ls, 0, n - 1)
+# print(lx[m-1])
+
+n = int(input())
+m = int(input())
+lx = list(range(1, n + 1, 1))
+lx.sort(key=sum_per_number)
+print(lx[m-1])
+```
