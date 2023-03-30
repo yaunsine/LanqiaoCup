@@ -1,0 +1,19 @@
+# 2409.大乘积
+
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+lx = [99, 22, 51, 63, 72, 61, 20, 88, 40, 21, 63, 30, 11, 18, 99, 12, 93, 16, 7, 53, 64, 9, 28, 84, 34, 96, 52, 82, 51, 77]
+lx = sorted(lx)
+cnt = 0
+for idx, item in enumerate(lx):
+  x = 2022 // item + 1 if 2022 % item > 0 else 0
+  for j in range(idx+1, len(lx), 1):
+    if lx[j] >= x:
+      cnt += 1
+print(cnt)
+```

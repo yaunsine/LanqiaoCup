@@ -1,0 +1,30 @@
+# 2406.字母数
+
+【解法1】
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+# 16*16=
+def transfer_hex(x):
+  res = str()
+  lx = ['A', 'B', 'C', 'D', 'E', 'F']
+  while x != 0:
+    y = x % 16
+    if y >= 10 and y <= 15:
+      res = lx[y-10] + res
+      x = x // 16
+    else:
+      break
+  return res if x == 0 else ""
+
+i = 2022
+while True:
+  i += 1
+  res = transfer_hex(i)
+  if res != "":
+    print(i)
+    break
+  
+```
