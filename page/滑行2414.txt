@@ -1,0 +1,49 @@
+```
+import os
+import sys
+
+
+def dfs(mat:list, visited, r, c):
+    if visited[r][c] != -1:
+      return visited[r][c]
+    directions = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+    cnt = 1
+    for item in directions:
+        new_r = r + item[0]
+        new_c = c + item[1]
+        # 越界了
+        if new_r < 0 or new_c < 0 or new_r >= len(mat) or new_c >= len(mat[0]):
+            continue
+        # 循环访问
+        if [new_r, new_c] in visited:
+            continue
+        if mat[new_r][new_c] >= mat[r][c]:
+            continue
+        
+        cnt = max(dfs(mat, visited, new_r, new_c) + 1, cnt)
+        visited[r][c] = cnt
+    return cnt
+
+rows, cols = list(map(int, input().split()))
+if rows <= 0 or cols <= 0:
+    print("Invalid input.")
+    sys.exit()
+
+mat = []
+max_value = 0
+cur_position = [0, 0]
+for i in range(rows):
+    row_data_list = list(map(int, input().split()))
+    if max(row_data_list) > max_value:
+        max_value = max(row_data_list)
+        cur_position[0] = i
+        cur_position[1] = row_data_list.index(max_value)
+    mat.append(row_data_list)
+
+max_cnt = 0
+visited = [[-1] * cols for _ in range(rows)]
+for r in range(rows):
+    for c in range(cols):
+      max_cnt = max(dfs(mat, visited, r, c), max_cnt)
+print(max_cnt)
+```

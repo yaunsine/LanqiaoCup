@@ -1,0 +1,20 @@
+# 387.质因数分解
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+def is_zhishu(x):
+  for i in range(2, int(pow(x, 0.5)) + 1, 1):
+    if x % i == 0:
+      return False
+  return True
+
+n = int(input())
+
+for i in range(n, 2, -1):
+  if is_zhishu(i) and n % i == 0 and is_zhishu(n // i):
+    print(i)
+    break  
+```

@@ -1,0 +1,22 @@
+# 2407.列名
+
+```python
+import os
+import sys
+
+# 请在此输入您的代码
+n = 2022
+# 1-A, 26-Z
+col_name = ""
+letter_list = [str(chr(ord('A') + i)) for i in range(26)]
+while n != 0:
+  if n % 26 == 0:
+    col_name = letter_list[25] + col_name
+    n -= 26
+  else:
+    col_name = letter_list[n % 26 - 1] + col_name
+    n = n // 26
+
+print(col_name)
+
+```
