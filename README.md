@@ -111,3 +111,28 @@ python main.py
 [2] `grip`工具
 
 
+### 官方说明
+[1] 蓝桥杯大赛个人赛（软件类/电子类）比赛管理办法
+
+https://x-static.lanqiao.cn/upload/202303/courseimg/00ff2e39-91cb-4c32-a441-4102186e2386.pdf
+
+[2] LQSP2021_PA目录
+
+```
+仅供测试，非正式比赛试题，能打开此PDF即可.pdf
+第十四届蓝桥杯大赛软件类个人线上比赛手册.pdf
+第十四届蓝桥杯大赛（软件类）C&C++和Java组竞赛规则及说明.pdf
+第十四届蓝桥杯大赛（软件类）Python组竞赛规则及说明.pdf
+第十四届蓝桥杯大赛（软件类）Web组竞赛规则及说明.pdf
+第十四届蓝桥杯大赛（软件类）软件测试竞赛规则及说明.pdf
+蓝桥杯个人线上比赛常见问题与回复.pdf
+```
+
+[3] 第14届蓝桥杯超全备赛手册（高校类）
+
+https://qej4kkvli6.feishu.cn/docx/doxcnKSKHr8vzFcuRnOtiLmiXJc
+
+
+[4] ACMCoder-ExamHelper插件安装说明
+
+https://cdn.acmcoder.com/files/20220401/index.html
