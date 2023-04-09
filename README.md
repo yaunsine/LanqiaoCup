@@ -19,6 +19,7 @@
 ### 序言
 此项目以lanqiao刷题笔记为例，将所有markdown编写的md文档进行合并操作，最后转为pdf文档，简化了知识笔记产出的流程，可以极大满足汇总笔记的要求。使用线程异步，请求html数据，转换pdf文档。
 
+
 ### 刷题链接1：https://www.lanqiao.cn/cup/?sort=students_count&second_category_id=3
 
 ### 题库链接2：https://www.lanqiao.cn/problems/
@@ -136,3 +137,13 @@ https://qej4kkvli6.feishu.cn/docx/doxcnKSKHr8vzFcuRnOtiLmiXJc
 [4] ACMCoder-ExamHelper插件安装说明
 
 https://cdn.acmcoder.com/files/20220401/index.html
+
+
+
+## Github相关数据
+
+
+![](https://raw.github.com/yaunsine/LanqiaoCup/master/github-images/gitclones.png)
+
+
+![](https://raw.github.com/yaunsine/LanqiaoCup/master/github-images/visitors.png)
